@@ -1,4 +1,4 @@
-package com.software_reengineered.post_examples.forInLoopStreamMapCollectAndForEach;
+package com.software_reengineered.blogPost.forInLoopStreamMapCollectAndForEach;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.software_reengineered.post_examples.commonObjects.customer.Address;
-import com.software_reengineered.post_examples.commonObjects.customer.Person;
+import com.software_reengineered.blogPost.commonObjects.customer.Address;
+import com.software_reengineered.blogPost.commonObjects.customer.Person;
 
 
-public class App 
+public class Stream
 {
 	
 	

@@ -1,4 +1,4 @@
-package com.software_reengineered.post_examples.commonObjects.customer;
+package com.software_reengineered.blogPost.commonObjects.customer;
 
 public class Address {
 
