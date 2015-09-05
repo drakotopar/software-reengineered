@@ -1,4 +1,4 @@
-package com.software_reengineered.blogPost.commonObjects.customer;
+package com.software_reengineered.blogPost.forInLoopStreamMapCollectAndForEach;
 
 public class Address {
 

@@ -7,9 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.software_reengineered.blogPost.commonObjects.customer.Address;
-import com.software_reengineered.blogPost.commonObjects.customer.Person;
-
 
 public class Stream
 {
