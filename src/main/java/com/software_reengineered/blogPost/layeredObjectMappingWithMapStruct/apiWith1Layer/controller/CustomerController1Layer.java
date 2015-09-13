@@ -26,7 +26,17 @@ public class CustomerController1Layer {
 		return customers;
 	}
 	
-	
+	/**
+	 * Example
+	 * {
+			"firstName": "toto", 
+			"lastName":"tutu",
+			"address":{
+			"street":"Ubi avenue 3",
+			"postalCode":"123123"
+			}
+		}
+	 */
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public Customer create(@RequestBody Customer customer) {
 			customer = repository.save(customer);

@@ -29,7 +29,17 @@ public class CustomerController {
 				.map(CustomerWithAddressMapper.INSTANCE::toResource).collect(Collectors.toList());
 	}
 	
-	
+	/**
+	 * Example
+	 * {
+			"firstName": "toto", 
+			"lastName":"tutu",
+			"address":{
+			"street":"Ubi avenue 3",
+			"postalCode":"123123"
+			}
+		}
+	 */
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public CustomerWithAddressResource create(@RequestBody Customer customer) {
 			customer = repository.save(customer);

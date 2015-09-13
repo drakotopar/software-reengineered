@@ -25,7 +25,7 @@ public class CustomerManagement {
 	{
 		 
 		 /**
-		  * create a customer at the business layer
+		  * create a customer with IOC and mapping
 		  */
 		 Customer john = new Customer("John", "Doe", Address.createNewInstance("Ubi avenue 3", "123456"));
 		 
