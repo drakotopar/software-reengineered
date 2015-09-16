@@ -1,4 +1,4 @@
-package com.software_reengineered.blogPost.aggregateRoot.workWithAggregateRoot.model;
+package com.software_reengineered.blogPost.workWithAggregateRoot.model;
 
 import javax.persistence.Entity;
 

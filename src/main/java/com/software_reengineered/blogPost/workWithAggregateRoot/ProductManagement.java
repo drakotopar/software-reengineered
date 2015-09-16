@@ -1,4 +1,4 @@
-package com.software_reengineered.blogPost.aggregateRoot.workWithAggregateRoot;
+package com.software_reengineered.blogPost.workWithAggregateRoot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.software_reengineered.blogPost.aggregateRoot.workWithAggregateRoot.model.PriceOffering;
-import com.software_reengineered.blogPost.aggregateRoot.workWithAggregateRoot.model.Product;
-import com.software_reengineered.blogPost.aggregateRoot.workWithAggregateRoot.repository.ProductRepository;
 import com.software_reengineered.blogPost.layeredObjectMappingWithMapStruct.apiWith3Layers.business.App;
+import com.software_reengineered.blogPost.workWithAggregateRoot.model.PriceOffering;
+import com.software_reengineered.blogPost.workWithAggregateRoot.model.Product;
+import com.software_reengineered.blogPost.workWithAggregateRoot.repository.ProductRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = App.class)
@@ -31,6 +31,7 @@ public class ProductManagement {
 		Product ifon6 = new Product("ifon6");
 		ifon6.setPriceOffering(PriceOffering.Factory.createOtc(1000, "SGD", 1)); //it is way more readable with a factory than a controller
 		
+		//persist
 		ifon6 = repository.save(ifon6); 
 		
 		System.out.println(ifon6.getName());
