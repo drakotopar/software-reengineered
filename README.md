@@ -2,7 +2,7 @@
 
 Hi geeks!
 
-Code here isto demonstrate the concepts of the blog
+Code here is to demonstrate the concepts of the blog
 http://software-reengineered.com/
 
 In software-reengineered, I am highlighting some bad habit I have
