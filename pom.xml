@@ -52,6 +52,28 @@
 	</dependencies>
 
 
+	<profiles>
+	  <profile>
+	    <id>model-only</id>
+	    <build>
+	      <plugins>
+	        <plugin>
+	          <artifactId>maven-jar-plugin</artifactId>
+	          <configuration>
+	            <classifier>model-only</classifier>
+	            <includes>
+	              <include>com/software_reengineered/blogPost/layeredObjectMappingWithMapStruct/apiWith1Layer/model/*</include>
+	            </includes>
+	          </configuration>
+	        </plugin>
+	      </plugins>
+	    </build>
+	  </profile>
+	</profiles>
+
+
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -60,7 +82,7 @@
 				<configuration>
 					<source>1.8</source>
         			<target>1.8</target>
-				</configuration>
+        		</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.bsc.maven</groupId>
